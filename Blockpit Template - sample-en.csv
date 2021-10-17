@@ -1,0 +1,22 @@
+Blockpit Excel Template;;;;;;;;;Version: 1.1
+*keep row 1-3 unchanged!;;;;;;;;;
+Transaction Type;From quantity;From currency;To quantity;To currency;Fees paid;Fee currency;Timestamp;Acquisition Timestamp;Note
+Trade;1000;EUR;0.1;BTC;10;EUR;2020-01-05 8:00:00;;Example: Bought Bitcoin
+Deposit;;;0.1;ETH;0.001;ETH;2020-01-20 9:30:00;;Example: Deposited Ethereum
+Withdrawal;0.05;BTC;;;0.001;BTC;2020-02-01 10:00:00;;Example: Withdrew Bitcoin
+Payment;0.5;DOT;20;EUR;0.002;DOT;2021-03-21 11:00:00;;Example: Payment Polkadot
+Airdrop;;;1000;BEST;;;2021-02-01 14:00:00;;Example: Airdrop BEST
+Hardfork;;;1;BCH;;;2017-01-08 0:00:01;2015-03-20 12:21:35;Example: Hardfork Bitcoin Cash
+Mining;;;0.001;BTC;;;2020-03-20 12:00:00;;
+Lending;;;0.001;BTC;;;2020-03-20 12:00:00;;
+Staking;;;0.001;BTC;;;2020-03-20 12:00:00;;
+Margin Profit;;;2.3;ETH;;;2019-03-19 14:00:00;;
+Margin Loss;0.9;BTC;;;;;2019-03-19 14:00:00;;
+Margin Fee;0.1;BTC;;;;;2019-03-19 14:00:00;;
+Masternode;;;0.001;BTC;;;2020-03-20 12:00:00;;
+Bounty;;;0.001;BTC;;;2020-03-20 12:00:00;;
+Gift Received;;;2000;XRP;;;2019-03-18 15:00:00;2018-02-14 17:00:00;
+Gift Sent;1000;XRP;;;;;2019-03-18 15:00:00;;
+Expenses;;;;;20;USDT;2020-05-18 19:00:00;;
+Tokensale;2000;EUR;2000;NEXO;;;2019-03-18 15:00:00;2018-02-14 17:00:00;
+Security Token Dividend;;;12;NEXO;;;2021-03-18 12:00:00;;

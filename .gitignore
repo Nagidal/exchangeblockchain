@@ -4,7 +4,9 @@ minimal.py
 config.ini
 *.csv
 *.msg
+*.txt
 !requirements.txt
+!Blockpit Template - sample-en.csv
 *.xlsx
 *.rtf
 
