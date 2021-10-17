@@ -72,3 +72,7 @@ class Row:
             self.note = f"transaction hash: {source_row.transaction_hash}"
         elif type(source_row) is source.Transaction:
             self.transaction_type = "Trade"
+            with setlocale('C'):
+                self.timestamp = datetime.strptime(
+                        source_row.date_time_utc, settings.bce_transaction_time_format
+                        ).replace(tzinfo=timezone.utc)

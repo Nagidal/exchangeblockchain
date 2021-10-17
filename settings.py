@@ -13,3 +13,4 @@ withdrawals_columns = deposits_columns
 
 
 bce_time_format = "%m/%d/%Y, %I:%M:%S %p"
+bce_transaction_time_format = "%Y-%m-%dT%H:%M:%S.%fZ"
