@@ -1,3 +1,18 @@
+*.log
+minimal.py
+*_old.*
+config.ini
+*.csv
+*.msg
+!requirements.txt
+*.xlsx
+*.rtf
+
+# Vim files
+*~
+*.swp
+*.swo
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
