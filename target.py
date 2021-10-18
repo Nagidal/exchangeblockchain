@@ -76,3 +76,16 @@ class Row:
                 self.timestamp = datetime.strptime(
                         source_row.date_time_utc, settings.bce_transaction_time_format
                         ).replace(tzinfo=timezone.utc)
+                if source_row.transaction_type == "BUY":
+                    self.to_currency = source_row.asset
+                    self.to_quantity = float(source_row.quantity_transacted)
+                    self.from_currency = source_row.counter_asset
+                    self.from_quantity = float(source_row.counter_amount)
+                elif source_row.transaction_type == "SELL":
+                    self.to_currency = source_row.counter_asset
+                    self.to_quantity = float(source_row.counter_amount)
+                    self.from_currency = source_row.asset
+                    self.from_quantity = float(source_row.quantity_transacted)
+                self.fees_paid = float(source_row.fee_amount)
+                self.fees_currency = source_row.fee_asset
+                self.note = f"Order_ID: {source_row.order_id}, Transaction_ID: {source_row.transaction_id}"
