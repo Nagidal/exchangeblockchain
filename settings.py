@@ -10,7 +10,12 @@ withdrawals_source = Path("withdrawals.tsv")
 transactions_columns = "date_time_utc,transaction_type,asset,quantity_transacted,counter_asset,counter_amount,price,fee_asset,fee_amount,order_id,transaction_id".split(",")
 deposits_columns = "currency	amount	date_time	status	confirmations	transaction_hash".split("\t")
 withdrawals_columns = deposits_columns
+target_columns = "Transaction Type;From quantity;From currency;To quantity;To currency;Fees paid;Fee currency;Timestamp;Acquisition Timestamp;Note".split(";")
+
+
+target_file = Path("result.csv")
 
 
 bce_time_format = "%m/%d/%Y, %I:%M:%S %p"
 bce_transaction_time_format = "%Y-%m-%dT%H:%M:%S.%fZ"
+target_time_format = "%Y-%m-%d %H:%M:%S"
